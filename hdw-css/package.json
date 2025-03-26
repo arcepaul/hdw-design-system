@@ -1,0 +1,42 @@
+{
+  "name": "hdw-css",
+  "version": "1.0.0",
+  "description": "hdw design system CSS",
+  "main": "index.scss",
+  "scripts": {
+    "build": "npm run clean:build && webpack --mode='production'",
+    "prep": "prep/sync-uswds-packages.js",
+    "clean:build": "rimraf ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@uswds/uswds": "3.12.0",
+    "copy-webpack-plugin": "~9.0.1",
+    "css-loader": "3.6.0",
+    "eslint": "~7.32.0",
+    "extract-loader": "^4.0.3",
+    "file-loader": "~6.2.0",
+    "glob": "~7.1.4",
+    "mkdirp": "^1.0.4",
+    "ncp": "~2.0.0",
+    "postcss-loader": "6.1.1",
+    "rimraf": "~3.0.2",
+    "sass": "1.84.0",
+    "sass-loader": "~12.6.0",
+    "stylelint": "^16.17.0",
+    "stylelint-config-prettier": "~8.0.2",
+    "stylelint-config-recommended-scss": "^14.1.0",
+    "stylelint-prettier": "~1.2.0",
+    "stylelint-scss": "^6.11.1",
+    "webpack": "^5.98.0",
+    "webpack-cli": "~5.1.4"
+  },
+  "peerDependencies": {
+    "postcss": ">=8.4.0",
+    "sass": ">=1.69.0 <1.77.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21"
+  }
+}
